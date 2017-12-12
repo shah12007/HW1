@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body> 
+	<canvas id="canvas" width="200" height="200"></canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	var circle = function(x,y, radius) {
+		ctx.beginPath();
+		ctx.arc(x,y, radius,0,Math.PI * 2,false);
+		ctx.stroke();
+	}
+
+	ctx.lineWidth = 4;
+	ctx.strokeStyle ="Black";
+	circle(100,100,50);
+
+	
+	ctx.beginPath();
+	ctx.arc(100,120,20,0, Math.PI,false);
+	ctx.stroke();
+
+	ctx.beginPath();
+	ctx.arc(100,55,20,0, Math.PI,true);
+	ctx.stroke();
+
+	circle(80,80,10);
+	circle(120,80,10);
+	circle(80,80,5);
+	circle(120,80,5);
+
+	ctx.beginPath();
+	ctx.moveTo(55, 80);
+	ctx.lineTo(70, 80);
+	ctx.moveTo(95, 80);
+	ctx.lineTo(105, 80);
+	ctx.moveTo(130, 80);
+	ctx.lineTo(145, 80);
+
+	ctx.stroke();
+    
+	circle(47,70,10);
+	circle(45,80,10);
+	circle(43,90,10);
+	circle(41,100,10);
+    circle(53,60,10);
+        circle(70,49,10);
+        circle(132,49,10);
+        circle(144,57,10);
+	circle(155,70,10);
+	circle(157,80,10);
+	circle(160,90,10);
+	circle(162,100,10);
+
+	</script>
+</body>
+</html>
